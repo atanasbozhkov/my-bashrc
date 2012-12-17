@@ -52,8 +52,10 @@ shopt -s extglob
 # allow builtin echo to expand backslash escape sequences
 shopt -s xpg_echo
 # use most instead of less for paging
-export PAGER="most"
+#export PAGER="most"
 # configure TextMate as editor and for remote editing
+# !!!!!!! 
+# THIS HAS TO BE FIXED
 export EDITOR="/usr/local/bin/mate -w"
 export RMATE_HOST=auto
 export RMATE_PORT=52698
@@ -73,12 +75,8 @@ alias ls="gls -h --color=always"
 alias dir="gls -hG1 --color=always"
 # make df more readable
 alias df="gdf -H"
-#Uni connection
-alias tardis="ssh star_fire@ssh.tardis.ed.ac.uk"
 # GNU echo
 alias echo="gecho"
-# colors script
-alias colors="perl ~/Dropbox/Scripts/Colortest/256colors.perl"
 # make htop sort by CPU usage and update only every 2 seconds and only show processes of current logged in user
 alias htop="htop --sort-key PERCENT_CPU -d 20 -u `whoami`"
 # delete all Apple System Log files (speeds up Terminal.app on first login)
@@ -86,22 +84,11 @@ alias delasl="sudo rm -f /private/var/log/asl/*.asl"
 # flush dns cache (may not work after OS X 10.8?)
 alias flushcache="dscacheutil -flushcache"
 # get PID of a process by name
-alias pidof="sh /Library/Scripts/pidof.sh"
+#alias pidof="sh /Library/Scripts/pidof.sh"
 # display text with figlet and toilet
 alias toilet="toilet --gay -f mono9"
-#alias destep="figlet -w 80 -nkf rowancap DESTEP TRED | tr 'd' '▟' | tr 'P' '▛' | tr 'M' '█' | tr 'V' '▜' | tr '\"' ' ' | tr '.' ' ' | tr 'a' '▟' | tr 'b' '▙' | tr 'K' '█' | tr 'A' '▟' | tr 'F' '▛' | tr 'Y' '▜' | tr 'v' '█' | tr 'm' '█' | tr 'r' '▛' | toilet -w 80 --gay -f term"
-#alias destep="echo "" && figlet -f rowancap DESTEP TRED | tr '[A-Z]|[a-z]' '▐' | tr '.' ' ' | tr '\"' ' ' | toilet --gay -f term"
-#alias destep="clear && echo "" && echo "" && echo "" && echo "" && echo "" && toilet -f future --gay '          destep'; toilet -f future --gay '           tred' && echo "" && echo "" && echo "" && echo """
-#alias destep="clear && echo "" && echo "" && echo "" && echo "" && toilet -f kban --gay '     destep' | tr \|  ▉ | tr \.  ▄ | tr \' ▀ && toilet -f kban --gay '        tred' | tr \|  ▉ | tr \.  ▄ | tr \' ▀ && echo "" && echo """
-alias destep="clear && toilet -f mono9 --gay destep tred"
 #repair disk permissions
 alias repair="diskutil repairpermissions"
-#problem?
-alias problem="clear && figlet -pf future problem? | toilet --gay -f term | cowsay -nf coolface | tr '/|\|_|-' ' ' | tr '\\' ' '"
-#soon...
-alias soon="clear && figlet -pf future SOON... | toilet --gay -f term | cowsay -nf tidus | tr '/|\|_|-' ' ' | tr '\\' ' '"
-#start mpd with proper config file
-alias mpd="killall mpd; open /Users/zach/Dropbox/Scripts/mpd\ configure.app;"
 #view colorised live system log entries
 alias syslog="tail -F /var/log/system.log | grcat conf.log"
 #colorize tree output
