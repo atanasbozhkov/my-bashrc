@@ -21,6 +21,17 @@ Functions
 `repair` - Will repair the disk permissions of the HD <br/>
 `syslog` - Will show you a live colorized tail-list of the system events. <br/>
 `sysprofile` - A command that will print out some hardware/software version information.
+<br/>
+`extract ()` will extact the file passed if it's one from the following types:
+	*.tar.bz2 <br/>
+	*.tar.gz <br/>
+	*.bz2 <br/>
+	*.gz <br/>
+	*.tar <br/>
+	*.tbz2 <br/>
+	*.tgz <br/>
+	*.zip <br/>
+	*.Z <br/>
 
 <br/>
 
@@ -42,3 +53,8 @@ Utilities to install
 1. tree <br/>
 2. pstree <br/>
 3. tmux <br/>
+
+Thanks to:
+----------
+Zach
+Urukrama @ Ubuntuforums.org

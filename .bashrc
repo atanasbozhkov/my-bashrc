@@ -166,7 +166,7 @@ fill=""
 
 PROMPT_COMMAND=pre_prompt
 
-PS1="\`if [ \$? = 0 ]; then echo \"${TXTBLK}${BAK241} \$ ${TXT236}${BAKBLK}→\"; else echo \"${TXTBLK}${BAKRED} ! ${TXTBRD}${BAKBLK}→\"; fi\`${TXTGRN}${BAKBLK} \u${BLDBLK}@${BLDCYN}\h ${TXTBLK}${BAKBLU}→${TXTRST}${BAKBLU}${BLDBLU} \$newPWD\${fill}${TXTRST}\n"
+PS1="\`if [ \$? = 0 ]; then echo \"${TXTBLK}${BAK241} \$ ${TXT236}${BAKBLK}\n \"; else echo \"${TXTBLK}${BAKRED} ! ${TXTBRD}${BAKBLK}→\"; fi\`${TXTGRN}${BAKBLK} \u${BLDBLK}@${BLDCYN}\h ${TXTBLK}${BAKBLU}→${TXTRST}${BAKBLU}${BLDBLU} \$newPWD\${fill}${TXTRST}\n"
 
 PS2="${TXTBLK}»${TXTRST}"
 PS3="${TXTBLK}»${TXTRST}"
@@ -184,7 +184,7 @@ man () {
     /usr/bin/man $@ || ($@ --help 2> /dev/null && $@ --help | $PAGER)
 }
 
-# Extract things. Thanks to urukrama, Ubuntuforums.org	
+# Extract things. Thanks to Urukrama, Ubuntuforums.org	
 extract () {
      if [ -f $1 ] ; then
          case $1 in
