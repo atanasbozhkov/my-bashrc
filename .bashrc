@@ -1,5 +1,3 @@
-export PATH=/Applications/SenchaSDKTools:$PATH
-export SENCHA_SDK_TOOLS_2_0_0_BETA3="/Applications/SenchaSDKTools"
 #colored terminal stuff & fixes
 export TERM="xterm-color"
 export CLICOLOR=1
