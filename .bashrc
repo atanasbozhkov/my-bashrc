@@ -1,23 +1,13 @@
-#colored terminal stuff & fixes
+#Color terminal declarations
 export TERM="xterm-color"
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export GREP_OPTIONS='--color=auto'
 source "`brew --prefix grc`/etc/grc.bashrc"
-#tmux stuff
-#check if tmux is installed
-#if which tmux 2>&1 >/dev/null; then
-#    #if no session is started, start a new session
-#    test -z ${TMUX} && tmux -2
-#
-#    #when quitting tmux, try to attach
-#    while test -z ${TMUX}; do
-#        tmux attach || break
-#    done
-#fi
+
 # FIXES
 ################################################################################
-# set sane process limit
+# Set sane process limit
 ulimit -n 4096
 # remove duplicates from command history list
 export HISTCONTROL=erasedups
@@ -25,15 +15,10 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 # set UTF-8 support
 export LC_ALL="en_US.UTF-8"
-#export LANG=en_US.UTF-8
-# make Terminal interact with user in English
+#Export LANG=en_US.UTF-8
+#Make Terminal interact with user in English
 export LANG="en_US"
 #set LC_CTYPE="en_US.UTF-8"
-# fix some iTerm inputs for international characters
-#set meta-flag on
-#set input-meta on
-#set output-meta on
-#set convert-meta off
 # prevent clobbering
 set -o noclobber
 # ensure history from session is appended to ~/.bash_history on exit
@@ -97,15 +82,6 @@ alias tree="tree -AC"
 alias sysprofile="sw_vers; system_profiler SPHardwareDataType | head -n 15; echo ""; system_profiler SPDisplaysDataType; df;"
 #clear the terminal display
 alias cl="clear"
-#update WebKit nightly
-alias updatewebkit="sh ~/Dropbox/Scripts/WebkitNightlyUpgradeScript.sh"
-#poll Google Finance data for stock information
-alias stockinfo="osascript ~/Dropbox/Scripts/stockinfo.applescript"
-#a terminal clock
-alias clock="tty-clock -s -c -t -C 1"
-#fuck u python
-alias pip="/usr/local/share/python/pip"
-alias beet="/usr/local/share/python/beet"
 #use graphical characters for pstree
 alias pstree="pstree -g 3"
 #make tmux use all available colors
