@@ -13,6 +13,9 @@ Some functions have been aliased. In order to temporary use the original command
 For example using `tree` will print out a colorized tree.
 In escape that simple use - `\tree`
 
+ScreenShot:
+-----------
+![Alt text](http://www.atanasbozhkov.com/terminal.png "OS X Screenshot with Terminal.app")
 
 Functions
 ---------
