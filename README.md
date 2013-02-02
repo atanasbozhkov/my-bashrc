@@ -22,7 +22,7 @@ Functions
 `syslog` - Will show you a live colorized tail-list of the system events. <br/>
 `sysprofile` - A command that will print out some hardware/software version information.
 <br/>
-`extract ()` will extact the file passed if it's one from the following types:
+`extract ()` will extact the file passed if it's one from the following types:<br/>
 	*.tar.bz2 <br/>
 	*.tar.gz <br/>
 	*.bz2 <br/>
@@ -56,5 +56,5 @@ Utilities to install
 
 Thanks to:
 ----------
-Zach
-Urukrama @ Ubuntuforums.org
+Zach<br/>
+Urukrama @ Ubuntuforums.org<br/>
